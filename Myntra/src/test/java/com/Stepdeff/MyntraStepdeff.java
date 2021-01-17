@@ -10,14 +10,16 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class MyntraStepdeff {
+public class  MyntraStepdeff {
 	WebDriver driver;
 
 	LoginAction logAct= new LoginAction(); 
+	
 
 @Given("^Browse to Myntra home page$")
 public void browse_to_Myntra_home_page() throws Throwable {
 	logAct.launchLoginPage();
+	
   
 }
 
@@ -39,8 +41,8 @@ public void successfully_login() throws Throwable {
   System.out.println("This is Myntra");
   Assert.assertEquals(Title, GetTitle);
   System.out.println("I am successfully log in  Myntra Homepage");
-  driver.quit();
-	//Assert.assertEquals(S, get title);
+ // driver.quit();
+//Assert.assertEquals(S, get title);
    
 }
 

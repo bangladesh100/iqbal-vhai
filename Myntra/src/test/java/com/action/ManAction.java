@@ -31,7 +31,7 @@ public class ManAction {
 
 	}
 
-	public void menmenuoption() throws InterruptedException {
+	public void menmenuoption() throws InterruptedException  {
 		// System.out.println(">> MAN ")
 
 		Actions action = new Actions(SetupDriver.driver);
@@ -56,7 +56,7 @@ public class ManAction {
 
 	}
 
-	public void Price() {
+	public void Price() { 
 		ManElm.price.click();
 	}
 
@@ -71,10 +71,13 @@ public class ManAction {
 	 * public void Size() { ManElm.Size .click(); }
 	 */
 
-	public void siseOfTshirt() {
-		ManElm.sizeTshirt.click();
-	}
+	//public void sizeOfTshirt() {
+		//ManElm.Lsize();
+	
 
+	public void size() {
+		ManElm.Lsize.click();
+	}
 	public void ADDtoBag() {
 		ManElm.Addtobag.click();
 	}

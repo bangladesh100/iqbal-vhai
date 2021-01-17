@@ -2,25 +2,25 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="429" started-at="2020-04-22T02:35:26Z" finished-at="2020-04-22T02:35:27Z">
+  <suite name="Default suite" duration-ms="270" started-at="2021-01-14T06:27:35Z" finished-at="2021-01-14T06:27:35Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Runner.RunnerClass@6f3b5d16]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Runner.Runnerclass@6b419da]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="429" started-at="2020-04-22T02:35:26Z" finished-at="2020-04-22T02:35:27Z">
-      <class name="com.Runner.RunnerClass">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.Runner.RunnerClass@6f3b5d16]" name="setUpClass" is-config="true" duration-ms="171" started-at="2020-04-21T22:35:26Z" finished-at="2020-04-21T22:35:26Z">
+    <test name="Default test" duration-ms="270" started-at="2021-01-14T06:27:35Z" finished-at="2021-01-14T06:27:35Z">
+      <class name="com.Runner.Runnerclass">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.Runner.Runnerclass@6b419da]" name="setUpClass" is-config="true" duration-ms="140" started-at="2021-01-14T01:27:35Z" finished-at="2021-01-14T01:27:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Runner.RunnerClass@6f3b5d16]" name="feature" duration-ms="0" started-at="2020-04-21T22:35:26Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-21T22:35:26Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Runner.Runnerclass@6b419da]" name="feature" duration-ms="0" started-at="2021-01-14T01:27:35Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-01-14T01:27:35Z">
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[java.lang.IllegalArgumentException: Not a file or directory: C:\Users\md200\eclipse-workspace\Myntra\Features]]>
+              <![CDATA[java.lang.IllegalArgumentException: Not a file or directory: C:\Users\md200\git\repository9\Myntra\Features\myntralLogin.feature]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\md200\eclipse-workspace\Myntra\Features
+              <![CDATA[java.lang.RuntimeException: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\md200\git\repository9\Myntra\Features\myntralLogin.feature
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
@@ -42,7 +42,7 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\md200\eclipse-workspace\Myntra\Features
+Caused by: java.lang.IllegalArgumentException: Not a file or directory: C:\Users\md200\git\repository9\Myntra\Features\myntralLogin.feature
 	at cucumber.runtime.io.FileResourceIterator$FileIterator.<init>(FileResourceIterator.java:54)
 	at cucumber.runtime.io.FileResourceIterator.<init>(FileResourceIterator.java:20)
 	at cucumber.runtime.io.FileResourceIterable.iterator(FileResourceIterable.java:19)
@@ -66,11 +66,11 @@ Caused by: java.lang.IllegalArgumentException: Not a file or directory: C:\Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.Runner.RunnerClass@6f3b5d16]" name="tearDownClass" is-config="true" duration-ms="242" started-at="2020-04-21T22:35:26Z" finished-at="2020-04-21T22:35:27Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.Runner.Runnerclass@6b419da]" name="tearDownClass" is-config="true" duration-ms="119" started-at="2021-01-14T01:27:35Z" finished-at="2021-01-14T01:27:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.Runner.RunnerClass -->
+      </class> <!-- com.Runner.Runnerclass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

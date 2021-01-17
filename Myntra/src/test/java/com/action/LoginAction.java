@@ -3,28 +3,33 @@ package com.action;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.Element.LoginElement;
 import com.Utilities.SetupDriver;
 
 public class LoginAction {
 
-	LoginElement logElmt;
+	LoginElement logElmt=null;
 	WebDriver driver;
 
 	public LoginAction() {
 
-		logElmt = new LoginElement();
-		
+		LoginElement logElmt = new LoginElement();
+
 		PageFactory.initElements(SetupDriver.driver, logElmt);
+
+		// PageFactory.initElements(SetupDriver.driver, logElmt);
+		// System.out.println( driver.getTitle());
 
 	}
 
-	public String launchLoginPage() {
+	public void launchLoginPage() {
 		SetupDriver.driver.get("https://www.myntra.com/login");
 
-		String title = SetupDriver.driver.getTitle();
-		return title;
+		System.out.println(SetupDriver.driver.getTitle());
+
 	}
 
 	/*
@@ -35,27 +40,28 @@ public class LoginAction {
 	 * 
 	 * }
 	 */
-	
 
 	public void inputEmail(String email) throws InterruptedException {
-		logElmt.email.sendKeys("zebjubair@gmail.com");
+
+		//logElmt.getEmail().sendKeys("zebjubair@gmail.com");
+		//Thread.sleep(2000);
+		logElmt.getEmail().sendKeys("9345890");
 		Thread.sleep(2000);
 
 	}
 
 	public void inputPassword(String password) throws InterruptedException {
-		logElmt.password.sendKeys("Zebun1705@");
+		logElmt.getPassword().sendKeys("Zebun1705@");
 		Thread.sleep(5000);
 	}
 
 	public void inputLogin() throws InterruptedException {
-		logElmt.Login.click();
+		logElmt.getLogin().click();
 
 		Thread.sleep(5000);
+		
 	}
 
 	// TODO Auto-generated method stub
 
 }
-
-
